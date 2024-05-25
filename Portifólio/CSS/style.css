@@ -1,7 +1,7 @@
-body{
+*{
     margin: 0px;
-    margin-top: -22px;
     padding: 0px;
+    box-sizing: border-box;
 }
 header#cabeçalho{
     width: 100%;
@@ -14,12 +14,58 @@ main{
     margin: 50px;
     text-align: center;
 }
+div.componente{
+    width: 400px;
+    height: 350px;
+    text-align: center;
+    margin: 10px 30px 50px 10px;
+    display: inline-block;
+}
 div.bloco{
     width: 350px;
     height: 310px;
     background-color: white;
     border-radius: 25%;
     box-shadow: 6px 6px 6px 3px gray;
-    margin: 10px 10px 10px 10px;
-    display: inline-block;
+    line-height: 310px;
+}
+img{
+    margin: 70px 50px 50px 50px;
+}
+img#cpplogo{
+    width: 150px;
+    height: 150px;
+
+}
+img#weblogo{
+    width: 200px;
+    height: 150px;
+}
+img#sqlnosql{
+    width: 200px;
+    height: 150px;
+}
+img#javalogo{
+    width: 150px;
+    height: 150px;
+}
+img#pythonlogo{
+    width: 150px;
+    height: 150px;
+}
+p.titulos{
+    width: 180px;
+    overflow: hidden;
+    font-size: 25px;
+    margin: 10px 100px 10px 100px;
+}
+.show{
+    height: 60px;
+    transition: 1s;
+    opacity: 1;
+}
+.hide{
+    height: 0px;
+    transition: 1s;
+    opacity: 0;
 }
