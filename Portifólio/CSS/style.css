@@ -29,6 +29,9 @@ div.bloco{
     box-shadow: 6px 6px 6px 3px gray;
     line-height: 310px;
 }
+div.bloco:hover{
+    cursor: pointer;
+}
 img{
     margin: 70px 50px 50px 50px;
 }

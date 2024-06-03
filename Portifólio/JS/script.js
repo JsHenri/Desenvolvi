@@ -50,3 +50,7 @@ blocos[4].addEventListener('mouseleave',()=>{
         titulo.classList.add('hide')
         titulo.classList.remove('show')
 })
+
+function autenter(){
+    window.location.href = "Telas/indexaut.html"
+}
