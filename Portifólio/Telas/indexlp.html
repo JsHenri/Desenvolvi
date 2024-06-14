@@ -13,6 +13,25 @@
             <span></span>
             <span></span>
         </button>
+        <ul class="acessar">
+            <li class="botoes">
+                <a href="../index.html">
+                    <img class="icons" src="/Image/home-icon-vector.jpg" alt="home">
+                </a>
+            </li>
+            <li class="botoes">
+                <a href="https://github.com/JsHenri" target="_blank" rel="noopener noreferrer">
+                    <img class="icons" src="/Image/github.jpg" alt="github icon">
+                </a>
+            </li>
+            <li class="botoes">
+                <div class="fundobotao">
+                    <a href="https://github.com/JsHenri">
+                        <img id="sobremim" src="/Image/sobre.png" alt="sobre mim">
+                    </a>
+                </div>
+            </li>
+        </ul>
     </header>
     <nav id="navbar" class="hide">
         <input class="botaonav" type="button" onclick="autenter()" value="Automação Industrial">
@@ -65,6 +84,7 @@
             <p><strong>Atualização: </strong>
                 Mudar o valor da variável conforme necessário (por exemplo, vagas_seção_A = vagas_seção_A - 1).
             </p>
+            <img src="/Image/exemplo variavel.png" alt="exemplo variavel">
         </div>
         <div class="conteudos">
             <h3>Variaveis primitivas e tipo string</h3>
@@ -110,6 +130,7 @@
             <p><strong>Criação: </strong>
                 Pode ser criada usando aspas duplas
             </p>
+            <img src="/Image/exemplo string.png" alt="exemplo string">
             <p><strong>Métodos comuns: </strong></p> 
             <p>length(): Retorna o comprimento da string.</p>
             <p>charAt(int index): Retorna o caractere no índice especificado.</p>
@@ -117,11 +138,13 @@
         </div>
         <div class="conteudos">
             <h3>Conversão entre tipos de variaveis</h3>
-            <p><strong>Quando ocorre: </strong>Quando o tipo de destino é maior ou mais preciso que o tipo original.
-            </p>
+            <p><strong>Quando ocorre: </strong>Quando o tipo de destino é maior ou mais preciso que o tipo original.</p>
+            <p>Exemplo:</p>
+            <img src="/Image/exemplo conversao.png" alt="exemplo conversão">
             <p><strong>Conversão Explicita(Casting)</strong></p>
             <p><strong>Quando ocorre: </strong>Quando o tipo de destino é menor ou menos preciso que o tipo original. Pode haver perda de dados.</p>
             <p>Sintaxe: Colocar o tipo de destino entre parênteses antes da variável.</p>
+            <img src="/Image/exemplo conversao indou.png" alt="conversao int double">
             <p><strong>Conversão implicita: </strong>Automática, sem perda de dados.</p>
             <p><strong>Conversão explicita: </strong>Manual, pode haver perda de dados.</p>
             <p><strong>Conversões comuns</strong></p>
@@ -136,11 +159,19 @@
             <p><strong>if: </strong>Verifica uma condição. Se a condição for verdadeira, o bloco de código dentro do if é executado.</p>
             <p><strong>else: </strong>Executa o bloco de código se a condição do if for falsa.</p>
             <p><strong>else if: </strong>Verifica outra condição se a condição do if for falsa.</p>
+            <p>Exemplo de if:</p>
+            <img src="/Image/exemplo if.png" alt="exemplo if">
+            <p>Exemplo de else if:</p>
+            <img src="/Image/exemplo elseif.png" alt="exemplo else if">
+            <p>Exemplo de else:</p>
+            <img src="/Image/exemplo else.png" alt="exemplo else">
         </div>
         <div class="conteudos">
             <h3>Estrutura de decisão switch: </h3>
             <p>A estrutura switch é usada para selecionar uma entre várias opções possíveis, com base no valor de uma expressão. É especialmente útil quando há várias condições que dependem do valor de uma única variável.
             </p>
+            <p>Exemplo Switch:</p>
+            <img src="/Image/exemplo switch.png" alt="exemplo switch">
             <p><strong>Switch(Expressão) </strong>
                 Avalia a expressão (geralmente uma variável).
             </p>
@@ -167,6 +198,7 @@
             <p><strong>Interrupção: </strong>
                 Quando a condição se torna falsa, o loop para e o programa continua com o código após o “while”.
             </p>
+            <img src="/Image/exemplo while.png" alt="exemplo while">
             <p><strong>While(condição): </strong>
                 Repete o bloco de código enquanto a condição for verdadeira.
             </p>
@@ -193,6 +225,7 @@
             <p><strong>Interrupção: </strong>
                 Quando a condição se torna falsa, o loop para e o programa continua com o código após o for.
             </p>
+            <img src="/Image/exemplo for.png" alt="exemplo for">
             <p><strong>Inicialização: </strong>
                 int contador = 1; — Inicializamos a variável contador com 1.
             </p>
@@ -208,11 +241,14 @@
             <p>Um vetor, também conhecido como array, é uma coleção ordenada de elementos do mesmo tipo. 
                 Os elementos são acessados por meio de um índice, que começa em 0.
             </p>
+            <p>Exemplo: </p>
+            <img src="/Image/exemplo array.png" alt="exemplo array">
         </div>
         <div class="conteudos">
             <h3>Matrizes(Arrays multidimencionais)</h3>
             <p>Uma matriz é um array de arrays, ou seja, uma coleção de elementos organizados em linhas e colunas.
             </p>
+            <img src="/Image/exemplo array mult.png" alt="exemplo array multidimensional">
             <p><strong>Vetores: </strong></p>
             <p>Coleção ordenada de elementos do mesmo tipo.</p>
             <p>Acessados por índices, que começam em 0.</p>
@@ -240,6 +276,7 @@
             <p><strong>Valor de retorno: </strong>
                 O resultado que a função retorna após sua execução.
             </p>
+            <img src="/Image/exemplo funcao.png" alt="exemplo funcao">
         </div>
         <div class="conteudos">
             <h3>Recursividade </h3>
@@ -253,6 +290,7 @@
                 Chamada da própria função dentro do corpo da função.
             </p>
             <p>Exemplo Simples (com Fatorial)</p>
+            <img src="/Image/exemplo recursivo.png" alt="exemplo recursividade">
             <p><strong>Função: </strong>
                 Bloco de código que realiza uma tarefa específica e pode ser reutilizado.
             </p>
@@ -285,6 +323,7 @@
             <p><strong>Modificadores de acesso: </strong>
                 Especificam o nível de acesso aos atributos e métodos da classe. Os principais modificadores são public, private, protected e default.
             </p>
+            <img id="exemplocodigo" src="/Image/exemplo ob.png" alt="exemplo orientação objeto">
             <p><strong>Utilização do Método toString</strong></p>
             <p>
                 A implementação do método toString() na classe Object retorna uma representação do objeto no formato "nome_da_classe@hashcode". No entanto, você pode substituir esse método em suas próprias classes para fornecer uma representação mais significativa.
@@ -292,6 +331,7 @@
             <p>
                 Exemplo de Implementação:
             </p>
+            <img src="/Image/exemplo toString.png" alt="exemplo toString">
         </div>
         <div class="conteudos">
             <h3>Modelagem de classes no diagrama UML</h3>
@@ -348,18 +388,21 @@
             <p>
                 Isso significa que você pode acessar os membros estáticos diretamente usando o nome da classe, sem precisar criar um objeto dela.
             </p>
+            <img src="/Image/exemplo ce.png" alt="exemplo classe estatica">
         </div>
         <div class="conteudos">
             <h3>Math</h3>
             <p>
                 A classe Math oferece métodos para operações matemáticas básicas, como exponenciação, logaritmos, raízes quadradas e funções trigonométricas. É uma classe estática, então não é necessário criar instâncias dela. Depois de importá-la, seus métodos podem ser acessados diretamente.
             </p>
+            <img src="/Image/exemplo math.png" alt="exemplo math">
         </div>
         <div class="conteudos">
             <h3>Sobrecarga de Métodos</h3>
             <p>
-                A sobrecarga de métodos é como ter várias versões do mesmo método dentro de uma classe. Mesmo nome, mas diferentes parâmetros. Assim, podemos usar o mesmo nome para diferentes funções, contanto que os tipos ou a quantidade de argumentos sejam diferentes. Isso nos dá mais flexibilidade ao projetar nossas classes e métodos. Ah, e essa mesma ideia também se aplica aos construtores.
+                A sobrecarga de métodos é como ter várias versões do mesmo método dentro de uma classe. Mesmo nome, mas diferentes parâmetros. Assim, podemos usar o mesmo nome para diferentes funções, contanto que os tipos ou a quantidade de argumentos sejam diferentes. Isso nos dá mais flexibilidade ao projetar nossas classes e métodos. E essa mesma ideia também se aplica aos construtores.
             </p>
+            <img id="imagemlonga" src="/Image/exemplo sobrecarga.png" alt="exemplo sobrecarga">
         </div>
         <div class="conteudos">
             <h3>Excessões(Exception)</h3>
@@ -369,12 +412,14 @@
             <p>
                 Um rastreamento de pilha, com detalhes da exceção, é impresso no console • A execução do programa termina na linha 4 e, portanto, a instrução na linha 5 não é executada
             </p>
+            <img id="imagemlonga" src="/Image/exemplo exception.png" alt="exemplo exception">
         </div>
         <div class="conteudos">
             <h3>Herança</h3>
             <p>
                 Herança em Java permite que uma classe herde características de outra classe. Isso é feito usando a palavra-chave extends. A classe que herda é chamada de subclasse e a classe que é herdada é chamada de superclasse. Com herança, você pode reutilizar código e organizar seu programa de forma hierárquica. Por exemplo, uma classe "Carro" pode herdar características da classe "Veículo". Isso significa que o "Carro" pode usar métodos e atributos definidos em "Veículo". A herança ajuda na criação de programas mais flexíveis e fáceis de manter.
             </p>
+            <img src="/Image/exemplo heranca.png" alt="exemplo herança">
         </div>
         <div class="conteudos">
             <h3>Classes e métodos abstratos:</h3>
@@ -388,6 +433,7 @@
             <p><strong>Métodos concretos: </strong>
                 Também pode conter métodos concretos (com implementação), que podem ser herdados e/ou sobrepostos pelas subclasses.
             </p>
+            <img src="/Image/exemplo abstract.png" alt="exemplo abstract">
         </div>
         <div class="conteudos">
             <h3>Métodos abstratos:</h3>
@@ -403,6 +449,7 @@
             <p><strong>Métodos concretos: </strong>
                 Também pode conter métodos concretos (com implementação), que podem ser herdados e/ou sobrepostos pelas subclasses.
             </p>
+            <img src="/Image/exemplo metodo abstract.png" alt="exemplo metodo abstract">
         </div>
     </main>
 
