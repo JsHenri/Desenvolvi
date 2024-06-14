@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco de Dados</title>
+    <link rel="stylesheet" href="Stylewin/stylewin.css">
+</head>
+<body>
+    <header id="menu">
+        <button type="button" id="navopen" onclick="navclick()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+    <nav id="navbar" class="hide">
+        <input class="botaonav" type="button" onclick="autenter()" value="Automação Industrial">
+        <input class="botaonav" type="button" onclick="dwenter()" value="Desenvolvimento Web">
+        <input class="botaonav" type="button" onclick="bdenter()" value="Banco de Dados">
+        <input class="botaonav" type="button" onclick="lpenter()" value="Lógica de programação">
+        <input class="botaonav" type="button" onclick="cdenter()" value="Ciência de Dados">
+    </nav>
+    <main id="conteudo">
+        <div class="conteudos">
+            <h3>Dados</h3>
+            <p><strong>Diferença entre Dados e Modelagem de Dados: </strong>
+                Os "dados" referem-se às informações reais armazenadas e manipuladas em um sistema de banco de dados, enquanto "modelagem de dados" refere-se ao processo de projetar a estrutura e os relacionamentos dos dados dentro do sistema de banco de dados. 
+                Em resumo, os dados são os conteúdos reais, enquanto a modelagem de dados é o plano ou esquema para organizar e acessar esses dados de forma eficiente e eficaz.
+
+            </p>
+            <p><strong>Estrutura de Dados: </strong> 
+                Estrutura de dados é uma forma organizada de armazenar e gerenciar dados para que possam ser acessados e manipulados de maneira eficiente. Ela define como os dados são organizados e relacionados entre si dentro de uma aplicação ou sistema de computador. A escolha da estrutura de dados adequada é fundamental para otimizar o desempenho e a eficiência das operações realizadas sobre esses dados.
+            </p>
+            <p><strong>Banco de dados relacionais</strong>
+                Bancos de dados relacionais (RDBMS) são sistemas de gerenciamento de banco de dados baseados no modelo relacional, proposto por Edgar F. Codd na década de 1970. Nesse modelo, os dados são organizados em tabelas bidimensionais, onde cada linha representa uma entrada de dados e cada coluna representa um atributo ou campo.
+            </p>
+            <p><strong>Tabelas: </strong>
+                São a estrutura fundamental dos bancos de dados relacionais. Cada tabela possui um nome único e é composta por um conjunto de linhas (também chamadas de tuplas) e colunas (também chamadas de atributos).
+            </p>
+            <p><strong>Relacionamentos: </strong>
+                Os relacionamentos entre tabelas são estabelecidos por meio de chaves estrangeiras (foreign keys) e chaves primárias (primary keys). Uma chave primária é um atributo ou conjunto de atributos que identifica exclusivamente cada linha em uma tabela. Uma chave estrangeira é um atributo em uma tabela que se refere à chave primária de outra tabela, estabelecendo uma relação entre elas.
+            </p>
+            <p><strong>Integridade Referêncial</strong>
+                Refere-se à consistência dos dados em um banco de dados relacional. Isso significa que todas as referências de chave estrangeira devem apontar para chaves primárias existentes em outras tabelas.
+            </p>
+            <p><strong>Normalização</strong>
+                É o processo de organização dos dados em um banco de dados relacional para minimizar a redundância e a dependência. Isso é feito dividindo as tabelas em várias partes menores e mais gerenciáveis e estabelecendo relações entre elas.
+            </p>
+            <p><strong>SQL(Structured Query Linguage)</strong>
+                É a linguagem padrão para manipulação e consulta de dados em bancos de dados relacionais. O SQL fornece comandos como SELECT, INSERT, UPDATE e DELETE para realizar operações em tabelas e dados.
+            </p>
+        </div>
+        <div class="conteudos">
+            <h3>Modelos Entidade de Relacionamento(ER)</h3>
+            <p>É uma abordagem conceitual para modelar e descrever os dados de um sistema de informação. 
+                Ele é frequentemente utilizado na fase inicial de design de banco de dados para representar visualmente as entidades, seus atributos e os relacionamentos entre elas.
+            </p>
+            <p><strong>Atributos: </strong>
+                São características ou propriedades que descrevem uma entidade. Cada atributo corresponde a uma coluna em uma tabela do banco de dados. 
+                Por exemplo, a entidade Cliente pode ter atributos como Nome, Endereço e Email.
+            </p>
+    
+            <p><strong>Relacionamentos: </strong>
+                São associações entre duas ou mais entidades. Eles são representados visualmente por meio de linhas que conectam as entidades. Por exemplo, um relacionamento entre as entidades Cliente e Pedido pode representar que um cliente fez um pedido.
+            </p>
+            <p><strong>Cardinalidade: </strong>
+                Refere-se à quantidade de entidades que podem participar de um relacionamento. Por exemplo, um cliente pode fazer vários pedidos (relacionamento "um para muitos" ou "1"), 
+                enquanto um pedido só pode ser feito por um cliente (relacionamento "muitos para um" ou "N:1").
+            </p>
+            <p>Exemplo: </p>
+            <p><strong>Entidade Livro: </strong>
+                Com atributos como ISBN, Título e Autor.
+            </p>
+            <p><strong>Entidade Autor: </strong>
+                Com atributos como Nome e Nacionalidade.
+            </p>
+            <p><strong>Entidade Emprestimo: </strong>
+                Com atributos como Data de Empréstimo e Data de Devolução.
+            </p>
+            <p><strong>Os relacionamentos podem ser:</strong></p>
+            <p>Um livro pode ser escrito por um ou mais autores (relacionamento "muitos para muitos").
+            </p>
+            <p>Um empréstimo é feito por um cliente e pode incluir vários livros (relacionamento "muitos para muitos").
+            </p>
+            <p>Um cliente pode fazer vários empréstimos (relacionamento "um para muitos").
+            </p>
+        </div>
+        <div class="conteudos">
+            <h3>Comandos DDL - Data Definition Linguage </h3>
+            <p>Comandos DDL (Data Definition Language) são um conjunto de instruções SQL utilizadas para definir e gerenciar estruturas de banco de dados e objetos relacionados. 
+                Eles permitem criar, modificar e excluir tabelas, índices, visões e outros objetos de banco de dados.
+            </p>
+            <p><strong>Create: </strong>
+                Utilizado para criar objetos de banco de dados, como tabelas, índices, visões, procedimentos armazenados e outros. 
+            </p>
+            <p><strong>Alter: </strong>
+                Utilizado para modificar a estrutura de objetos de banco de dados existentes, como adicionar, modificar ou excluir colunas de uma tabela. 
+            </p>
+            <p><strong>Drop: </strong>
+                Utilizado para excluir objetos de banco de dados existentes.
+            </p>
+        </div>
+        <div class="conteudos">
+            <h3>Comandos DML - Data Manipulation Linguage</h3>
+            <p>Comandos DML (Data Manipulation Language) são um conjunto de instruções SQL utilizadas para manipular dados em um banco de dados relacional. 
+                Eles permitem inserir, atualizar, recuperar e excluir dados de tabelas. 
+            </p>
+            <p><strong>Insert: </strong>
+                Utilizado para inserir novos registros em uma tabela.
+            </p>
+            <p><strong>Select: </strong> 
+                Utilizado para recuperar dados de uma ou mais tabela
+            </p>
+            <p><strong>Update: </strong> 
+                Utilizado para atualizar os dados de registros existentes em uma tabela.
+            </p>
+            <p><strong>Delete: </strong> 
+                Utilizado para excluir registros de uma tabela.
+            </p>
+        </div>
+        <div class="conteudos">
+            <h3>Comandos DQL - Data Query Linguage</h3>
+            <p>Comandos DQL (Data Query Language) são usados para consultar dados em bancos de dados relacionais. Eles permitem recuperar informações específicas de tabelas. Os principais comandos incluem SELECT (para recuperar dados), FROM (para especificar as tabelas), WHERE (para filtrar os dados), ORDER BY (para classificar os resultados) e GROUP BY (para agrupar os resultados). Esses comandos permitem realizar consultas sofisticadas e recuperar informações de maneira eficiente.
+            </p>
+        </div>
+        <div class="conteudos">
+            <h3>Comandos DTL - Data Transation Language</h3>
+            <p>Comandos DTL (Data Transaction Language) são usados para gerenciar transações em bancos de dados relacionais. Eles permitem controlar as operações de inserção, atualização e exclusão de dados em uma transação. Os principais comandos incluem COMMIT (para confirmar uma transação), ROLLBACK (para reverter uma transação) e SAVEPOINT (para definir um ponto de salvamento dentro de uma transação). 
+                Esses comandos garantem a consistência e a integridade dos dados em um banco de dados, permitindo que as operações sejam revertidas ou confirmadas conforme necessário.
+            </p>
+            <p><strong>Comandos DCL - Data Control Language: </strong>
+                Comandos DCL (Data Control Language) são usados para controlar o acesso e as permissões em bancos de dados relacionais. 
+                Eles permitem gerenciar a segurança dos dados, definindo quem pode acessar ou modificar determinadas partes do banco de dados. Os principais comandos incluem GRANT (para conceder permissões de acesso), REVOKE (para revogar permissões de acesso) e DENY (para negar explicitamente permissões de acesso). Esses comandos garantem que apenas usuários autorizados tenham acesso aos dados e que as políticas de segurança sejam aplicadas de forma eficaz.
+            </p>
+        </div>
+        <div class="conteudos">
+            <h3>Normalização: </h3>
+            <p>Normalização em bancos de dados é um processo de organização e otimização das estruturas de dados em tabelas relacionais. 
+                Seu objetivo principal é eliminar a redundância e a inconsistência nos dados, garantindo a integridade e a eficiência do banco de dados. O processo de normalização é baseado em uma série de regras, chamadas de formas normais, que definem como as tabelas devem ser estruturadas para minimizar problemas como a duplicação de dados e a dependência funcional
+            </p>
+            <p><strong>Primeira Forma Normal(1NF): </strong>
+                Cada coluna em uma tabela deve conter apenas valores atômicos, ou seja, não deve haver valores multivalorados ou repetidos.
+            </p>
+            <p><strong>Segunda Forma Normal(2NF): </strong>
+                Uma tabela está na 2NF se estiver na 1NF e se todos os seus atributos não chave forem totalmente dependentes da chave primária.
+            </p>
+            <p><strong>Terceira Forma Normal(3NF): </strong> 
+                Uma tabela está na 3NF se estiver na 2NF e se todos os seus atributos não chave forem transitivamente dependentes da chave primária.
+            </p>
+            <p>Ao normalizar um banco de dados, as tabelas são reestruturadas para cumprir essas regras de normalização.
+            </p>
+        </div>
+        <div class="conteudos">
+            <h3>Tipos de Banco de Dados NoSQL: </h3>
+            <p>Os bancos de dados NoSQL, que significam "Not Only SQL" ou "Não Apenas SQL", são uma categoria de bancos de dados que se diferenciam dos bancos de dados relacionais tradicionais. 
+                Eles foram projetados para lidar com volumes massivos de dados não estruturados ou semiestruturados, com uma abordagem mais flexível em comparação com os bancos de dados SQL tradicionais.
+            </p>
+            <p>Existem quatro tipos principais de bancos de dados NoSQL:
+            </p>
+            <p><strong>Banco de dados de documentos: </strong>
+                Nesse tipo de banco de dados, os dados são armazenados em documentos semelhantes a JSON (JavaScript Object Notation) ou BSON (Binary JSON). 
+                Cada documento pode conter um conjunto variável de campos e pode ser organizado em coleções. Um exemplo popular é o MongoDB.
+            </p>
+            <p><strong>Banco de dados de colunas: </strong>
+                Nesse tipo, os dados são armazenados em colunas, em vez de linhas, o que é diferente dos bancos de dados relacionais tradicionais. 
+                Isso permite uma leitura e gravação eficientes de dados em grandes conjuntos de dados. Um exemplo popular é o Apache Cassandra.
+            </p>
+            <p><strong>Banco de dados de grafos: </strong>
+                Esses bancos de dados são otimizados para representar e armazenar dados em forma de grafos, onde os nós representam entidades e as arestas representam as relações entre elas. 
+                Eles são ideais para modelar redes complexas e relacionamentos entre dados. Um exemplo popular é o Neo4j.
+            </p>
+            <p><strong>Banco de dados de Chave-Valor: </strong>
+                Nesse tipo, os dados são armazenados como pares de chave-valor simples, onde cada valor é associado a uma chave única. 
+                Isso proporciona uma estrutura de armazenamento simples e eficiente para operações de leitura e gravação rápidas. Exemplos populares incluem o Redis e o Amazon DynamoDB.
+            </p>
+        </div>
+        <div class="conteudos">
+            <h3>Orientado a documento</h3>
+            <p>O modelo orientado a documento é um tipo de banco de dados NoSQL onde os dados são armazenados em documentos semelhantes a JSON (JavaScript Object Notation) ou BSON (Binary JSON). 
+                Cada documento pode conter um conjunto flexível de campos e é geralmente organizado em coleções. Esses documentos podem ser hierárquicos e podem incorporar outros documentos ou arrays de documentos.
+            </p>
+            <p>A abordagem orientada a documento oferece flexibilidade na modelagem de dados, pois permite que os desenvolvedores armazenem e recuperem dados complexos e semiestruturados sem a necessidade de esquemas rígidos. 
+                Isso significa que você pode adicionar ou remover campos de documentos individualmente sem afetar a estrutura de outros documentos na mesma coleção.
+            </p>
+            <p>Essa flexibilidade torna os bancos de dados orientados a documento adequados para aplicativos que lidam com dados variáveis ou em evolução, como aplicativos da web, aplicativos de comércio eletrônico e aplicativos de análise de dados. 
+                Além disso, a capacidade de armazenar documentos complexos em uma única unidade de dados simplifica o mapeamento entre o modelo de dados do aplicativo e o modelo de dados do banco de dados.
+            </p>
+            <p>
+                Um exemplo popular de banco de dados orientado a documento é o MongoDB.
+            </p>
+        </div>
+        <div class="conteudos">
+            <h3>Atlas MongoDB</h3>
+            <p>O MongoDB Atlas é um serviço de banco de dados gerenciado oferecido pela MongoDB, Inc. 
+                Ele permite que os desenvolvedores criem, implantem e gerenciem clusters do MongoDB na nuvem de maneira fácil e eficiente, sem se preocuparem com a complexidade da configuração e manutenção de infraestrutura.
+            </p>
+            <p>Com o MongoDB Atlas, os usuários podem criar clusters do MongoDB com apenas alguns cliques, escolhendo a nuvem (como AWS, Azure ou Google Cloud), a região e a configuração desejada. 
+                O serviço oferece uma variedade de opções de configuração, incluindo diferentes tamanhos de instância, tipos de armazenamento e opções de segurança.
+            </p>
+            <p>Além disso, o MongoDB Atlas fornece recursos avançados de monitoramento e escalabilidade para garantir o desempenho e a confiabilidade dos clusters do MongoDB. 
+                Isso inclui monitoramento em tempo real, escalabilidade automática, backups automáticos e atualizações contínuas de patches e versões do MongoDB.
+            </p>
+            <p><strong>Desvantagens: </strong>
+                O MongoDB pode não ser adequado para sistemas que dependem fortemente de relacionamentos entre entidades ou que exigem muitas operações de JOIN. Além disso, há restrições em setores como o financeiro, onde entidades de pagamento podem não homologar sistemas que não armazenam dados financeiros dos clientes em bancos de dados relacionais tradicionais.
+            </p>
+        </div>
+        <div class="conteudos">
+            <h3>BSON</h3>
+            <p>O MongoDB utiliza uma estrutura de armazenamento de dados semelhante ao JSON, chamada BSON (Binary JSON), uma variação do modelo JSON. 
+                O BSON foi projetado com o objetivo de ser leve, portátil e eficiente. Ele mantém o uso de espaço mínimo, é facilmente transportável e permite uma rápida codificação e decodificação, principalmente devido ao uso de tipos de dados da linguagem C.
+            </p>
+        </div>
+        <div class="conteudos">
+            <h3>Criando uma colection e criando dados</h3>
+            <p>Criando uma coleção (collection): No MongoDB, uma coleção é análoga a uma tabela em bancos de dados relacionais. 
+                Para criar uma coleção, você pode usar o comando db.createCollection() no shell do MongoDB ou simplesmente inserir dados na coleção que deseja criar. 
+            </p>
+            <p>Isso criará uma coleção chamada "usuarios" no banco de dados atual.</p>
+            <p><strong>Inserindo dados na coleção: </strong>
+                Após criar a coleção, você pode inserir dados nela usando o método insertOne() ou insertMany() no shell do MongoDB.
+            </p>
+            <p>Este comando irá inserir um documento na coleção "usuarios" com os campos nome, idade e email.</p>
+        </div>
+        <div class="conteudos">
+            <h3>Realizando consultas: </h3>
+            <p>Consultas no MongoDB são realizadas usando o método find() no shell do MongoDB ou através de operações de consulta em linguagens de programação compatíveis com MongoDB, 
+                como JavaScript (usando o driver oficial do MongoDB) ou Python (usando PyMongo).
+            </p>
+            <p>Exemplo:</p>
+            <p><strong>Consultando todos decumentos em uma coleção: </strong></p>
+            <p>Esta consulta retorna todos os documentos na coleção "usuarios".</p>
+            <p><strong>Consultando documentos em condições especificas</strong></p>
+            <p>Esta consulta retorna todos os documentos na coleção "usuarios" onde o campo "idade" é igual a 30.</p>
+            <p><strong>Consultando com proteção</strong></p>
+            <p>Esta consulta retorna todos os documentos na coleção "usuarios", mas apenas com os campos "nome" e "idade".</p>
+            <p><strong>Consultando com operadores de comparação</strong></p>
+            <p>Esta consulta retorna todos os documentos na coleção "usuarios" onde o campo "idade" é maior que 25.</p>
+        </div>
+    </main>
+
+    <script src="Scriptwin/scriptwin.js"></script>
+</body>
+</html>

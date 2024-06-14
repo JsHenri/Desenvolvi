@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de Programação</title>
+    <link rel="stylesheet" href="Stylewin/stylewin.css">
+</head>
+<body>
+    <header id="menu">
+        <button type="button" id="navopen" onclick="navclick()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+    <nav id="navbar" class="hide">
+        <input class="botaonav" type="button" onclick="autenter()" value="Automação Industrial">
+        <input class="botaonav" type="button" onclick="dwenter()" value="Desenvolvimento Web">
+        <input class="botaonav" type="button" onclick="bdenter()" value="Banco de Dados">
+        <input class="botaonav" type="button" onclick="lpenter()" value="Lógica de programação">
+        <input class="botaonav" type="button" onclick="cdenter()" value="Ciência de Dados">
+    </nav>
+    <main id="conteudo">
+        <div class="conteudos">
+            <h3>Lógica de Programação</h3>
+            <p><strong>Regras Sintática: </strong>
+                A sintaxe é a parte da gramática que estuda a estrutura das frases e as regras que determinam como as palavras se combinam para formar sentenças gramaticalmente corretas.
+            </p>
+            <p><strong>Ordem das Palavras: </strong> 
+                Cada língua tem uma ordem específica para os constituintes de uma frase. Por exemplo, em português, a ordem básica é Sujeito-Verbo-Objeto (SVO):
+            </p>
+            <p>"O cachorro (Sujeito) mordeu (Verbo) o homem (Objeto)."</p>
+            <p><strong>Concordancia: </strong>
+                As palavras devem concordar em gênero, número e pessoa:
+            </p>
+            <p>"As meninas (plural, feminino) são (plural) inteligentes (plural, feminino)."</p>
+            <p><strong>Regras Semântica: </strong>
+                É simplesmente o significado das palavras e frases.
+            </p>
+            <p><strong>Palavra: </strong>
+                "Gato"
+            </p>
+            <p>
+                Significado: Um animal pequeno que mia.
+            </p>
+            <p><strong>Frase: </strong>
+                "O gato dorme"
+            </p>
+            <p>Significado: Um gato está realizando a ação de dormir.</p>
+            <p><strong>Contexto: </strong></p>
+            <p>Frase: "Você pode abrir a janela?"</p>
+            <p>Significado: Pode ser um pedido educado para abrir a janela ou uma pergunta sobre a capacidade de abrir a janela, dependendo da situação.</p>
+            <p>A semântica, então, é sobre como entendemos o significado das palavras e frases, e como esses significados podem mudar dependendo de como as palavras são combinadas e do contexto em que são usadas.</p> 
+        </div>
+        <div class="conteudos">
+            <h3>Variáveis</h3>
+            <p><strong>Variavel: </strong>
+                Nome que representa um valor.
+            </p>
+            <p><strong>Atribuição: </strong>
+                Dar um valor inicial à variável (por exemplo, vagas_seção_A = 50).
+            </p>
+    
+            <p><strong>Atualização: </strong>
+                Mudar o valor da variável conforme necessário (por exemplo, vagas_seção_A = vagas_seção_A - 1).
+            </p>
+        </div>
+        <div class="conteudos">
+            <h3>Variaveis primitivas e tipo string</h3>
+            <p>Java possui oito tipos de variáveis primitivas, cada uma com seu propósito específico:
+            </p>
+            <p><strong>Byte: </strong></p>
+            <p>Tamanho: 8 bits.</p>
+            <p>Intervalo: -128 a 127</p>
+            <p>Uso: Economizar espaço em grandes arrays.</p>
+            <p><strong>Short: </strong></p>
+            <p>Tamanho: 16 bits</p>
+            <p>Intervalo: -32.768 a 32.767</p>
+            <p>Uso: Economizar memória em comparação com int quando valores pequenos são suficientes</p>
+            <p><strong>Int: </strong></p>
+            <p>Tamanho: 32 bits</p>
+            <p>Intervalo: -2.147.483.648 a 2.147.483.647</p>
+            <p>Uso: Valor padrão para inteiros</p>
+            <p><strong>Long</strong></p>
+            <p>Tamanho: 64 bits</p>
+            <p>Intervalo: -9.223.372.036.854.775.808 a 9.223.372.036.854.775.807</p>
+            <p>Uso: Quando um intervalo maior que int é necessário</p>
+            <p><strong>Float</strong></p>
+            <p>Tamanho: 32 bits</p>
+            <p>Precisão: Aproximadamente 6-7 dígitos decimais</p>
+            <p>Uso: Números de ponto flutuante com precisão simples</p>
+            <p><strong>Double</strong></p>
+            <p>Tamanho: 64 bits</p>
+            <p>Precisão: Aproximadamente 15 dígitos decimais</p>
+            <p>Uso: Números de ponto flutuante com precisão dupla (valor padrão para decimais)</p>
+            <p><strong>Char</strong></p>
+            <p>Tamanho: 16 bits</p>
+            <p>Intervalo: '\u0000' (0) a '\uffff' (65.535)</p>
+            <p>Uso: Armazena um único caractere Unicode</p>
+            <p><strong>Boolean</strong></p>
+            <p>Tamanho: Não definido exatamente (depende da JVM)</p>
+            <p>Valores possíveis: true ou false</p>
+            <p>Uso: Armazena valores booleanos (verdadeiro ou falso)</p>
+        </div>
+        <div class="conteudos">
+            <h3>Tipo String em Java</h3>
+            <p><strong>Definição: </strong> String é uma classe que encapsula uma cadeia de caracteres. 
+            </p>
+            <p><strong>Criação: </strong>
+                Pode ser criada usando aspas duplas
+            </p>
+            <p><strong>Métodos comuns: </strong></p> 
+            <p>length(): Retorna o comprimento da string.</p>
+            <p>charAt(int index): Retorna o caractere no índice especificado.</p>
+            <p>equals(Object anObject): Compara a string com outro objeto para igualdade.</p>
+        </div>
+        <div class="conteudos">
+            <h3>Conversão entre tipos de variaveis</h3>
+            <p><strong>Quando ocorre: </strong>Quando o tipo de destino é maior ou mais preciso que o tipo original.
+            </p>
+            <p><strong>Conversão Explicita(Casting)</strong></p>
+            <p><strong>Quando ocorre: </strong>Quando o tipo de destino é menor ou menos preciso que o tipo original. Pode haver perda de dados.</p>
+            <p>Sintaxe: Colocar o tipo de destino entre parênteses antes da variável.</p>
+            <p><strong>Conversão implicita: </strong>Automática, sem perda de dados.</p>
+            <p><strong>Conversão explicita: </strong>Manual, pode haver perda de dados.</p>
+            <p><strong>Conversões comuns</strong></p>
+            <p><strong>Primitivos: </strong>int para long (implícita), double para int (explícita).</p>
+            <p><strong>String para primitivo</strong>integer.parseInt("123").</p>
+            <p><strong>Primitivos para String</strong>integer.toString(123)</p>
+        </div>
+        <div class="conteudos">
+            <h3>Estrutura de decisão</h3>
+            <p>A estrutura de decisão if e else é usada para executar diferentes blocos de código com base em condições específicas.</p>
+            <p><strong>Sintaxe basica: </strong></p>
+            <p><strong>if: </strong>Verifica uma condição. Se a condição for verdadeira, o bloco de código dentro do if é executado.</p>
+            <p><strong>else: </strong>Executa o bloco de código se a condição do if for falsa.</p>
+            <p><strong>else if: </strong>Verifica outra condição se a condição do if for falsa.</p>
+        </div>
+        <div class="conteudos">
+            <h3>Estrutura de decisão switch: </h3>
+            <p>A estrutura switch é usada para selecionar uma entre várias opções possíveis, com base no valor de uma expressão. É especialmente útil quando há várias condições que dependem do valor de uma única variável.
+            </p>
+            <p><strong>Switch(Expressão) </strong>
+                Avalia a expressão (geralmente uma variável).
+            </p>
+            <p><strong>Case valor:: </strong>
+                Bloco de código que será executado se a expressão corresponder ao valor.
+            </p>
+            <p><strong>Break;: </strong> 
+                Finaliza o case atual e impede que o próximo case seja executado. (Se omitido, o próximo case será executado, comportamento conhecido como "fall-through").
+            </p>
+            <p><strong>Defalt:: </strong>(Opcional) Bloco de código que será executado se nenhum case corresponder à expressão.
+            </p>
+        </div>
+        <div class="conteudos">
+            <h3>Estrutura de repetição while: </h3>
+            <p>A estrutura de repetição while é usada para executar repetidamente um bloco de código enquanto uma condição específica for verdadeira.</p>
+            <p><strong>Condição: </strong>Antes de cada repetição, a condição é verificada.
+            </p>
+            <p><strong>Bloco de código: </strong>
+                Se a condição for verdadeira, o bloco de código dentro do while é executado.
+            </p>
+            <p><strong>Repetição: </strong>
+                Após a execução do bloco de código, a condição é verificada novamente. Se ainda for verdadeira, o bloco de código é executado novamente.
+            </p>
+            <p><strong>Interrupção: </strong>
+                Quando a condição se torna falsa, o loop para e o programa continua com o código após o “while”.
+            </p>
+            <p><strong>While(condição): </strong>
+                Repete o bloco de código enquanto a condição for verdadeira.
+            </p>
+            <p><strong>Uso comum: </strong>
+                Utilizado quando não sabemos exatamente quantas vezes o loop deve ser executado e dependemos de uma condição para determinar o fim.
+            </p>
+        </div>
+        <div class="conteudos">
+            <h3>Loop (FOR)</h3>
+            <p>O loop for é uma estrutura de repetição utilizada quando sabemos exatamente quantas vezes queremos repetir uma ação.
+            </p>
+            <p><strong>Inicialização: </strong>
+                Uma expressão é avaliada uma vez antes da execução do loop. Geralmente é usada para inicializar um contador.
+            </p>
+            <p><strong>Condição: </strong>
+                Antes de cada repetição, a condição é verificada. Se for verdadeira, o bloco de código dentro do for é executado.
+            </p>
+            <p><strong>Incremento/Decremento: </strong>
+                Uma expressão é avaliada após cada iteração do loop. Geralmente é usada para incrementar ou decrementar o contador.
+            </p>
+            <p><strong>Repetição: </strong>
+                Após a execução do bloco de código, o incremento/decremento é executado e a condição é verificada novamente. Se ainda for verdadeira, o bloco de código é executado novamente.
+            </p>
+            <p><strong>Interrupção: </strong>
+                Quando a condição se torna falsa, o loop para e o programa continua com o código após o for.
+            </p>
+            <p><strong>Inicialização: </strong>
+                int contador = 1; — Inicializamos a variável contador com 1.
+            </p>
+            <p><strong>Condição: </strong>
+                contador <= 5 — O loop continuará enquanto contador for menor ou igual a 5.
+            </p>
+            <p><strong>Incremento: </strong>
+                contador++ — A cada iteração, aumentamos contador em 1
+            </p>
+        </div>
+        <div class="conteudos">
+            <h3>Vetores(Arrays): </h3>
+            <p>Um vetor, também conhecido como array, é uma coleção ordenada de elementos do mesmo tipo. 
+                Os elementos são acessados por meio de um índice, que começa em 0.
+            </p>
+        </div>
+        <div class="conteudos">
+            <h3>Matrizes(Arrays multidimencionais)</h3>
+            <p>Uma matriz é um array de arrays, ou seja, uma coleção de elementos organizados em linhas e colunas.
+            </p>
+            <p><strong>Vetores: </strong></p>
+            <p>Coleção ordenada de elementos do mesmo tipo.</p>
+            <p>Acessados por índices, que começam em 0.</p>
+            <p><strong>Matrizes</strong></p>
+            <p>Arrays de arrays.</p>
+            <p>Organizados em linhas e colunas.</p>
+            <p><strong>Sintaxe</strong></p>
+            <p>Vetores: tipo[] nomeDoArray = new tipo[tamanho];</p>
+            <p>Matrizes: tipo[][] nomeDaMatriz = new tipo[linhas][colunas];</p>
+            <p>Vetores e matrizes são estruturas de dados fundamentais em Java para armazenar e manipular coleções de elementos de forma eficiente.</p>
+        </div>
+        <div class="conteudos">
+            <h3>Função</h3>
+            <p>Uma função, em programação, é um bloco de código que realiza uma tarefa específica e pode ser chamado/executado em diferentes partes de um programa. Ela ajuda a organizar o código em partes menores, mais gerenciáveis e reutilizáveis.
+            </p>
+            <p>Componentes de uma Função.</p>
+            <p><strong>Nome: </strong>
+                Identificador da função.
+            </p>
+            <p><strong>Parâmetros: </strong>
+                Valores que a função recebe para realizar sua tarefa.
+            </p>
+            <p><strong>Corpo: </strong>
+                O conjunto de instruções que define o que a função faz.</p>
+            <p><strong>Valor de retorno: </strong>
+                O resultado que a função retorna após sua execução.
+            </p>
+        </div>
+        <div class="conteudos">
+            <h3>Recursividade </h3>
+            <p>A recursividade é um conceito em programação em que uma função chama a si mesma para resolver um problema. Em outras palavras, uma função recursiva é uma função que se define em termos de si mesma.
+            </p>
+            <p>Componentes da Recursividade.</p>
+            <p><strong>Caso base: </strong>
+                Condição que determina quando a recursão deve parar.
+            </p>
+            <p><strong>Chamada recursiva: </strong>
+                Chamada da própria função dentro do corpo da função.
+            </p>
+            <p>Exemplo Simples (com Fatorial)</p>
+            <p><strong>Função: </strong>
+                Bloco de código que realiza uma tarefa específica e pode ser reutilizado.
+            </p>
+            <p><strong>Recursividade: </strong>
+                Uma função que chama a si mesma para resolver um problema.
+            </p>
+            <p><strong>Componentes</strong></p>
+            <p><strong>Função: </strong>
+                Nome, parâmetros, corpo, valor de retorno.
+            </p>
+            <p><strong>Recursividade: </strong>
+                Caso base, chamada recursiva.
+            </p>
+        </div>
+        <div class="conteudos">
+            <h3>Programação Orientada a Objeto</h3>
+            <p>
+                Uma classe é um modelo ou um "tipo de dados" que define o comportamento e as propriedades de um objeto. Ela serve como um plano para criar objetos. As classes são a base da programação orientada a objetos.
+            </p>
+            <p><strong>Componentes de uma classe</strong></p>
+            <p><strong>Atributos: </strong>
+                Também conhecidos como campos ou variáveis de instância, representam as características ou dados que um objeto pode ter. Cada objeto possui sua própria cópia dos atributos da classe.
+            </p>
+            <p><strong>Métodos: </strong>
+                Também conhecidos como funções ou operações, representam o comportamento ou as ações que um objeto pode executar. Os métodos operam nos atributos da classe e em outros objetos.
+            </p>
+            <p><strong>Construtor: </strong>
+                É um método especial usado para inicializar um objeto. Ele é invocado automaticamente quando um objeto é criado a partir da classe.
+            </p>
+            <p><strong>Modificadores de acesso: </strong>
+                Especificam o nível de acesso aos atributos e métodos da classe. Os principais modificadores são public, private, protected e default.
+            </p>
+            <p><strong>Utilização do Método toString</strong></p>
+            <p>
+                A implementação do método toString() na classe Object retorna uma representação do objeto no formato "nome_da_classe@hashcode". No entanto, você pode substituir esse método em suas próprias classes para fornecer uma representação mais significativa.
+            </p>
+            <p>
+                Exemplo de Implementação:
+            </p>
+        </div>
+        <div class="conteudos">
+            <h3>Modelagem de classes no diagrama UML</h3>
+            <p>
+                Na modelagem de classes no Diagrama UML, representamos as classes do sistema juntamente com seus atributos e métodos, bem como os relacionamentos entre essas classes.
+            </p>
+            <p><strong>Exemplo de classe no diagrama UML</strong></p>
+            <p><strong>Classe Livro: </strong></p>
+            <p><strong>Atributos: </strong>
+                título, ano de publicação
+            </p>
+            <p><strong>Métodos: </strong>
+                empréstimo(), devolução()
+            </p>
+            <p><strong>Classe Autor: </strong></p>
+            <p><strong>Atributos: </strong>
+                nome, país de origem
+            </p>
+            <p><strong>Classe Editora: </strong></p>
+            <p><strong>Atributos: </strong>
+                nome, localização
+            </p>
+            <p><strong>Casos especiais de assossiação</strong>
+            </p>
+            <p>
+                Além dos tipos comuns de associação (agregação, composição, etc.), existem alguns casos especiais que podem surgir na modelagem de classes:
+            </p>
+            <p><strong>Associação Reflexiva: </strong>
+                Uma classe pode estar associada a si mesma. Por exemplo, em um sistema de rede social, um usuário pode ter amigos que são outros usuários.
+            </p>
+            <p><strong>Associação Multivalorada: </strong>
+                Uma classe pode estar associada a várias instâncias de outra classe. Por exemplo, um livro pode ter vários autores e um autor pode escrever vários livros.
+            </p>
+            <p><strong>Associação Bidirecional: </strong>
+                As associações podem ser bidirecionais, o que significa que a relação entre duas classes funciona nos dois sentidos. Por exemplo, em um sistema de pedidos online, um cliente pode fazer vários pedidos, e um pedido pode pertencer a um único cliente.
+            </p>
+            <p><strong>Modelando relacionamentos no diagrama</strong></p>
+            <p>Ao modelar relacionamentos no Diagrama UML, usamos diferentes tipos de linhas e símbolos para representar a natureza dos relacionamentos entre as classes:</p>
+            <p><strong>Associação: </strong>
+                Representa uma ligação entre duas classes. Pode ser unidirecional ou bidirecional. Por exemplo, a associação entre Livro e Autor para representar que um autor escreveu um livro.
+            </p>
+            <p><strong>agregação: </strong>
+                Representa uma relação do tipo "todo-parte" entre classes, onde uma classe é composta por outras classes. Por exemplo, a agregação entre Pedido e ItemPedido, onde um pedido é composto por vários itens de pedido.
+            </p>
+            <p><strong>Composição: </strong>
+                É uma forma especial de agregação onde uma classe é composta por outras classes e é responsável por sua vida útil. Por exemplo, a composição entre Carro e Motor, onde um motor pertence a um único carro e é destruído quando o carro é destruído.
+            </p>
+        </div>
+        <div class="conteudos">
+            <h3>Classe Estaticas</h3>
+            <p>
+                Uma classe estática em programação orientada a objetos é uma classe que não pode ser instanciada e cujos membros (métodos e variáveis) pertencem à classe em si, não a instâncias individuais dela.
+            </p>
+            <p>
+                Isso significa que você pode acessar os membros estáticos diretamente usando o nome da classe, sem precisar criar um objeto dela.
+            </p>
+        </div>
+        <div class="conteudos">
+            <h3>Math</h3>
+            <p>
+                A classe Math oferece métodos para operações matemáticas básicas, como exponenciação, logaritmos, raízes quadradas e funções trigonométricas. É uma classe estática, então não é necessário criar instâncias dela. Depois de importá-la, seus métodos podem ser acessados diretamente.
+            </p>
+        </div>
+        <div class="conteudos">
+            <h3>Sobrecarga de Métodos</h3>
+            <p>
+                A sobrecarga de métodos é como ter várias versões do mesmo método dentro de uma classe. Mesmo nome, mas diferentes parâmetros. Assim, podemos usar o mesmo nome para diferentes funções, contanto que os tipos ou a quantidade de argumentos sejam diferentes. Isso nos dá mais flexibilidade ao projetar nossas classes e métodos. Ah, e essa mesma ideia também se aplica aos construtores.
+            </p>
+        </div>
+        <div class="conteudos">
+            <h3>Excessões(Exception)</h3>
+            <p>
+                Quando algo inesperado acontece durante a execução de um programa, isso é chamado de exceção. Isso pode interromper o fluxo normal do programa. No entanto, você pode planejar para esses eventos e lidar com eles dentro do seu código. Isso é chamado de tratamento de exceções. Quando uma exceção ocorre, o programa para de ser executado e um registro detalhado do erro, chamado de rastreamento de pilha, é impresso no console.
+            </p>
+            <p>
+                Um rastreamento de pilha, com detalhes da exceção, é impresso no console • A execução do programa termina na linha 4 e, portanto, a instrução na linha 5 não é executada
+            </p>
+        </div>
+        <div class="conteudos">
+            <h3>Herança</h3>
+            <p>
+                Herança em Java permite que uma classe herde características de outra classe. Isso é feito usando a palavra-chave extends. A classe que herda é chamada de subclasse e a classe que é herdada é chamada de superclasse. Com herança, você pode reutilizar código e organizar seu programa de forma hierárquica. Por exemplo, uma classe "Carro" pode herdar características da classe "Veículo". Isso significa que o "Carro" pode usar métodos e atributos definidos em "Veículo". A herança ajuda na criação de programas mais flexíveis e fáceis de manter.
+            </p>
+        </div>
+        <div class="conteudos">
+            <h3>Classes e métodos abstratos:</h3>
+            <p>
+                Uma classe abstrata é uma classe que não pode ser instanciada diretamente. Ela serve como um modelo para outras classes que estendem dela, fornecendo métodos comuns e possivelmente implementações padrão.
+            </p>
+            <p><strong>Palavra-chave abstract: </strong>Uma classe abstrata é declarada usando a palavra-chave abstract.</p>
+            <p><strong>Métodos Abstratos: </strong>
+                Pode conter métodos abstratos, ou seja, métodos sem implementação, que devem ser implementados pelas subclasses.
+            </p>
+            <p><strong>Métodos concretos: </strong>
+                Também pode conter métodos concretos (com implementação), que podem ser herdados e/ou sobrepostos pelas subclasses.
+            </p>
+        </div>
+        <div class="conteudos">
+            <h3>Métodos abstratos:</h3>
+            <p>
+                Um método abstrato é um método declarado em uma classe abstrata, mas sem implementação. Ele serve como uma "declaração" de um método que deve ser implementado pelas subclasses.
+            </p>
+            <p><strong>Sem implementação: </strong>
+                Não possui corpo de método, apenas a assinatura.
+            </p>
+            <p><strong>Implementação nas subclasses: </strong>
+                Deve ser implementado (ou sobreposto) por todas as subclasses concretas.
+            </p>
+            <p><strong>Métodos concretos: </strong>
+                Também pode conter métodos concretos (com implementação), que podem ser herdados e/ou sobrepostos pelas subclasses.
+            </p>
+        </div>
+    </main>
+
+    <script src="Scriptwin/scriptwin.js"></script>
+</body>
+</html>

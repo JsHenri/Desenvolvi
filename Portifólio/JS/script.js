@@ -51,6 +51,19 @@ blocos[4].addEventListener('mouseleave',()=>{
         titulo.classList.remove('show')
 })
 
+//As funções abrem uma pagina quando clicada
 function autenter(){
     window.location.href = "Telas/indexaut.html"
+}
+function dwenter(){
+    window.location.href = "Telas/indexdw.html"
+}
+function bdenter(){
+    window.location.href = "Telas/indexbd.html"
+}
+function lpenter(){
+    window.location.href = "Telas/indexlp.html"
+}
+function cdenter(){
+    window.location.href = "Telas/indexcd.html"
 }

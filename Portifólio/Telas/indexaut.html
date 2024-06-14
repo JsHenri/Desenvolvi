@@ -15,12 +15,148 @@
         </button>
     </header>
     <nav id="navbar" class="hide">
-        <input class="botaonav" type="button" value="Automação Industrial">
-        <input class="botaonav" type="button" value="Desenvolvimento Web">
-        <input class="botaonav" type="button" value="Banco de Dados">
-        <input class="botaonav" type="button" value="Lógica de programação">
-        <input class="botaonav" type="button" value="Ciência de Dados">
+        <input class="botaonav" type="button" onclick="autenter()" value="Automação Industrial">
+        <input class="botaonav" type="button" onclick="dwenter()" value="Desenvolvimento Web">
+        <input class="botaonav" type="button" onclick="bdenter()" value="Banco de Dados">
+        <input class="botaonav" type="button" onclick="lpenter()" value="Lógica de programação">
+        <input class="botaonav" type="button" onclick="cdenter()" value="Ciência de Dados">
+        
     </nav>
+    <main id="conteudo">
+        <div class="conteudos">
+            <h3>Sobre a IDE utilizada - Thinkercad</h3>
+            <p><strong>Biblioteca de Componentes: </strong> 
+                O Tinkercad oferece uma ampla variedade de componentes eletrônicos, incluindo resistores, LEDs, transistores, sensores, entre outros. 
+                Você pode adicionar esses componentes ao seu projeto arrastando e soltando-os na área de trabalho.
+            </p>
+            <p><strong>Placas Arduino:</strong> 
+                O Tinkercad inclui várias placas Arduino virtuais que você pode usar em seus projetos. 
+                Você pode programar essas placas usando uma interface visual baseada em blocos ou escrevendo código em C/C++.
+            </p>
+            <p><strong>Simulação de Circuito:</strong>
+                 Uma vez que você tenha criado seu circuito, você pode simulá-lo para ver como ele se comporta. 
+                 Isso inclui a simulação da interação entre os componentes, como o acionamento de um LED por um Arduino, por exemplo.
+            </p>
+        </div>
+        <div class="conteudos">
+            <h3>Visão sobre seus códigos</h3>
+            <p><strong>void setup(): </strong>
+                Esta função é chamada uma vez quando o programa começa a ser executado. 
+                É geralmente usada para configurar pinos, iniciar comunicações serial, inicializar variáveis, etc.
+            </p>
+            <p><strong>void loop(): </strong>
+                Esta função é executada continuamente depois que o void setup() é concluído. 
+                Ela é responsável por executar o código principal do programa, como ler sensores, processar dados e controlar saídas.
+            </p>
+            <p><strong>Comandos de controle de fluxo: </strong>
+                Assim como em outras linguagens de programação, você pode usar comandos de controle de fluxo, 
+                como if, else, for, while, switch, etc., para controlar o fluxo do programa.
+            </p>
+            <p><strong>Comunicação Serial: </strong>
+                Você pode usar funções como Serial.begin() e Serial.print() 
+                para comunicação serial com o computador ou outros dispositivos.
+            </p>
+            <p><strong>Funções de leitura e escrita de pinos: </strong>
+                O Tinkercad Arduino oferece funções para ler e escrever valores nos pinos do Arduino, 
+                como digitalWrite(), digitalRead(), analogWrite() e analogRead().
+            </p>
+        </div>
+        <div class="conteudos">
+            <h3>Funções do Arduino</h3>
+            <p><strong>digitalWrite(pin, value): </strong>
+                Esta função é usada para escrever um valor digital em um pino específico do Arduino. O valor pode ser HIGH (1) ou LOW (0), representando níveis de tensão de 5V ou 0V, respectivamente.
+                digitalWrite(pin, HIGH) configura o pino para o nível de tensão de 5V (alta) e digitalWrite(pin, LOW) configura o pino para o nível de tensão de 0V (baixa).  
+            </p>
+            <p>Exemplo: Para ligar um LED conectado ao pino 13, você usaria digitalWrite(13, HIGH); para desligar o LED, usaria digitalWrite(13, LOW).</p>
+            <p><strong>digitalRead(pin): </strong>
+                Esta função é usada para ler o estado digital de um pino específico do Arduino. Ele retorna HIGH (1) se o nível de tensão no pino for de 5V e LOW (0) se o nível de tensão for de 0V.
+                Você pode usar digitalRead(pin) para ler o estado do pino e tomar decisões com base nesse estado.
+            </p>
+            <p>Exemplo: Você pode usar digitalRead(2) para ler o estado do pino 2 e tomar uma ação com base nesse estado.</p>
+            <p><strong>analogWrite(pin, value): </strong>
+                Esta função é usada para gerar sinais PWM (Modulação por largura de pulso) em um pino específico do Arduino. Ela permite controlar a intensidade de saída em pinos PWM, como o controle de brilho de LEDs ou a velocidade de um motor.
+                analogWrite(pin, value) aceita um valor entre 0 (sem saída) e 255 (saída máxima). O valor determina o ciclo de trabalho do sinal PWM, onde 0 significa 0% de ciclo de trabalho (sem saída) e 255 significa 100% de ciclo de trabalho (saída máxima).
+            </p>
+            <p>Exemplo: Para ajustar o brilho de um LED conectado ao pino 9, você pode usar analogWrite(9, 128) para definir o LED em aproximadamente 50% de brilho.</p>
+            <p><strong>analogRead(pin): </strong>
+                Esta função é usada para ler um valor analógico de um pino específico do Arduino. Ela converte a tensão analógica presente no pino em um valor digital que varia de 0 a 1023, representando uma faixa de tensão de 0V a 5V.
+                analogRead(pin) aceita como argumento o número do pino analógico que você deseja ler. O Arduino possui vários pinos analógicos, geralmente marcados com "A0", "A1", etc.
+            </p>
+            <p>Exemplo: Se você conectar um potenciômetro a um pino analógico do Arduino e girar o potenciômetro, você pode usar analogRead() 
+                para ler os diferentes valores de tensão produzidos pelo potenciômetro. Por exemplo, int valor = analogRead(A0); irá ler o valor analógico do pino A0 e armazená-lo na variável valor.</p>
+        </div>
+        <div class="conteudos">
+            <h3>Variavéis Locais</h3>
+            <p>Variáveis locais são definidas dentro de uma função e só podem ser acessadas dentro do escopo dessa função. 
+                Elas são criadas quando a função é chamada e finalizada quando a função é concluída.
+            </p>
+            <p>Exemplo: Para ligar um LED conectado ao pino 13, você usaria digitalWrite(13, HIGH); para desligar o LED, usaria digitalWrite(13, LOW).</p>
+            <p><strong>Uso: </strong>Variáveis locais são úteis quando você precisa armazenar dados temporários que
+                 só serão usados dentro de uma determinada função.
+            </p>
+            <p>Exemplo: </p>
+            <img src="/Image/variavellocal.png" alt="exemplo de Variavel Local">
+        </div>
+        <div class="conteudos">
+            <h3>Constantes</h3>
+            <p>Constantes são valores que não podem ser alterados durante a execução do programa. 
+                Elas são definidas usando a palavra-chave const.
+            </p>
+            <p>Constantes são úteis para definir valores que não devem ser 
+                alterados acidentalmente e para tornar o código mais legível.
+            </p>
+            <p>Exemplo: </p>
+            <img src="/Image/constantes.png" alt="exemplo de Variavel Global">
+        </div>
+        <div class="conteudos">
+            <h3>Blink e sua estrutura</h3>
+            <p><strong>Configuração Inicial (void setup()): </strong>
+                No Arduino, o void setup() é chamado apenas uma vez quando o programa começa a ser executado. 
+                É onde você configura o ambiente do seu programa, como definir os modos dos pinos. 
+            </p>
+            <p>No exemplo Blink, o void setup() é usado para definir o pino do LED como uma saída, 
+                indicando que ele será usado para enviar sinais para o LED.
+            </p>
+            <p><strong>Loop Principal (void loop()): </strong>
+                O void loop() é executado continuamente após o void setup(). 
+                Ele contém o código principal do seu programa, que será repetido indefinidamente até que o Arduino seja desligado.
+            </p>
+            <p>No exemplo Blink, o void loop() é usado para ligar e desligar o LED em intervalos específicos. 
+                Isso cria o efeito de piscar do LED.
+            </p>
+            <p>Exemplo de código: </p>
+            <img id="exemplocodigo" src="/Image/exemplodecodigo.png" alt="exemplo de Variavel Global">
+            <p>int vermelho = 3; define o pino do LED como um inteiro, que é atribuída ao valor 3.
+            </p>
+            <p>pinMode(3, OUTPUT); configura o pino do LED como uma saída no void setup().
+            </p>
+            <p>digitalWrite(3, 1); liga o LED, pois escreve um sinal alto (5V) no pino do LED.
+            </p>
+            <p>delay(tempo_verm); é uma variavel que, pausa a execução do código por 5000 milissegundos (1 segundo).
+            </p>
+            <p>digitalWrite(3, 0); desliga o LED, pois escreve um sinal baixo (0V) no pino do LED.
+            </p>
+            <p>delay(tempo_setup); é uma variavel que, pausa a execução do código por mais 1000 milissegundos.
+            </p>
+        </div>
+        <div class="conteudos">
+            <h3>Acesse as Atividades aqui:</h3>
+            <p><strong>Atividade Semáforo: </strong>
+            </p>
+            <a href="https://github.com/JsHenri/Sem-foroArduino" target="_blank" rel="noopener noreferrer">
+                <img class="githubimg" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="github">
+            </a>
+            <p><strong>Lista de Exercícios Automação Industrial: </strong>
+            </p>
+            <a href="https://github.com/JsHenri/exercicioArduino" target="_blank" rel="noopener noreferrer">
+                <img class="githubimg" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="github">
+            </a>
+            <p><strong>Lista de Exercícios Arduino 2: </strong></p>
+            <a href="https://github.com/JsHenri/exerciciosarduinonovo/tree/main/MaisExercicios" target="_blank" rel="noopener noreferrer">
+                <img class="githubimg" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="github">
+            </a>
+        </div>
+    </main>
 
     <script src="Scriptwin/scriptwin.js"></script>
 </body>

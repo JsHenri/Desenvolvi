@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de Programação</title>
+    <link rel="stylesheet" href="Stylewin/stylewin.css">
+</head>
+<body>
+    <header id="menu">
+        <button type="button" id="navopen" onclick="navclick()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+    <nav id="navbar" class="hide">
+        <input class="botaonav" type="button" onclick="autenter()" value="Automação Industrial">
+        <input class="botaonav" type="button" onclick="dwenter()" value="Desenvolvimento Web">
+        <input class="botaonav" type="button" onclick="bdenter()" value="Banco de Dados">
+        <input class="botaonav" type="button" onclick="lpenter()" value="Lógica de programação">
+        <input class="botaonav" type="button" onclick="cdenter()" value="Ciência de Dados">
+    </nav>
+    <main id="conteudo">
+        <div class="conteudos">
+            <h3>Amostragem</h3>
+            <p>
+                Amostragem é o processo de selecionar um subconjunto representativo de dados de uma população maior para análise. Isso é feito para economizar tempo e recursos, enquanto ainda permite extrair conclusões precisas e significativas sobre toda a população. A amostragem é fundamental para garantir que as análises sejam realizadas de maneira eficiente e precisa, especialmente quando lidamos com conjuntos de dados muito grandes.
+            </p>
+            <p><strong>Amostragem aleatória simples: </strong> 
+                Selecionar aleatoriamente um subconjunto de indivíduos da população. Por exemplo, escolher aleatoriamente 100 clientes de uma lista de 1000 para realizar uma pesquisa de satisfação.
+            </p>
+            <p><strong>Amostragem Estratificada: </strong>
+                Dividir a população em grupos homogêneos (estratos) e, em seguida, selecionar aleatoriamente uma amostra de cada estrato. Por exemplo, dividir os alunos de uma escola por série e, em seguida, selecionar aleatoriamente alguns alunos de cada série para uma pesquisa.
+            </p>
+            <p><strong>Amostragem Sistematica: </strong>
+                Selecionar indivíduos em intervalos regulares de uma lista ordenada da população. Por exemplo, selecionar a cada 10º cliente de uma lista de clientes.
+            </p>
+        </div>
+        <div class="conteudos">
+            <h3>Tendencias Centrais</h3>
+            <p>As tendências centrais são utilizadas para representar um conjunto de dados com um único valor. No estudo da Estatística, é bastante comum que elas sejam utilizadas para compreender melhor o comportamento de um conjunto de dados.
+            </p>
+            <p><strong>Moda: </strong>
+                O valor que ocorre com mais frequência em um conjunto de dados.
+            </p>
+            <p>
+                Exemplo: No conjunto de dados {2, 3, 4, 4, 5, 5, 5, 6}, a moda é 5 porque ocorre mais frequentemente.
+            </p>
+            <p><strong>Mediana: </strong>
+                O valor do meio em um conjunto de dados ordenados.
+            </p>
+            <p>
+                Exemplo: No conjunto de dados {3, 6, 7, 8, 10}, a mediana é 7, pois é o valor do meio quando os dados estão em ordem crescente.
+            </p>
+            <p><strong>Média Aritimetica: </strong>
+                A média simples de todos os valores em um conjunto de dados, calculada pela soma de todos os valores dividida pelo número total de valores.
+            </p>
+            <p>
+                Exemplo: No conjunto de dados {10, 15, 20, 25}, a média aritmética é (10 + 15 + 20 + 25) / 4 = 17.5.
+            </p>
+            <p><strong>Média Aritimetica Ponderada: </strong>
+                Uma média onde cada valor tem um peso associado a ele. A média é calculada multiplicando cada valor pelo seu peso, somando-os e dividindo pela soma dos pesos.
+            </p>
+            <p>
+                Exemplo: Se as notas de um aluno em um curso têm pesos diferentes, como 40% para trabalhos, 30% para provas e 30% para participação, a média ponderada seria calculada multiplicando cada nota pela sua ponderação, somando-as e dividindo por 100.
+            </p>
+            <p><strong>Percentil: </strong>
+                Um valor abaixo do qual uma determinada porcentagem de observações em um grupo de observações cai.
+            </p>
+            <p>
+                Exemplo: Se um aluno está no 80º percentil em um teste, isso significa que ele fez igual ou melhor que 80% dos alunos.
+            </p>
+            <p><strong>Quartil: </strong>
+                Um ponto que divide um conjunto de dados em quatro partes iguais, onde cada parte representa 25% dos dados.
+            </p>
+            <p>
+                Exemplo: No conjunto de dados {1, 3, 5, 7, 9, 11, 13, 15}, o primeiro quartil (Q1) é 4, o segundo quartil (mediana) é 8 e o terceiro quartil (Q3) é 12.
+            </p>
+        </div>
+        <div class="conteudos">
+            <h3>Meididas de Disperção</h3>
+            <p>
+                Medidas de dispersão são estatísticas que indicam os quão espalhados ou variáveis são os dados em um conjunto de observações. Elas ajudam a entender a dispersão dos dados em torno da média e fornecem insights sobre a consistência dos dados. A amplitude é uma medida de dispersão simples que indica a diferença entre o maior e o menor valor em um conjunto de dados.
+            </p>
+            <p><strong>Variância: </strong>
+                A média dos quadrados das diferenças entre cada valor e a média do conjunto de dados. Quanto maior a variância, maior a dispersão dos dados.
+            </p>
+            <p>
+                Exemplo: Considere os dados {2, 4, 4, 4, 5, 5, 7}. A média é 4. A variância seria calculada como ((2-4)² + (4-4)² + (4-4)² + (4-4)² + (5-4)² + (5-4)² + (7-4)²) / 7 = 2.
+            </p>
+            <p><strong>Desvio Padrão: </strong>
+                A raiz quadrada da variância. Ele fornece uma medida de dispersão em termos da unidade de medida original.
+            </p>
+            <p>
+                Exemplo: No conjunto de dados acima, o desvio padrão seria a raiz quadrada de 2, que é aproximadamente 1.41.
+            </p>
+            <p><strong>Amplitude: </strong>
+                A diferença entre o maior e o menor valor em um conjunto de dados.
+            </p>
+            <p>
+                Exemplo: Considere os dados {3, 5, 7, 9, 12}. A amplitude seria 12 - 3 = 9.
+            </p>
+        </div>
+        <div class="conteudos">
+            <h3>Limites em Ciência de Dados</h3>
+            <p>
+                Limites geralmente se referem a intervalos específicos de valores que são usados para definir critérios, restrições ou filtros em uma análise. Esses limites podem ser aplicados em várias etapas do processo de análise de dados para segmentar ou filtrar os dados de acordo com as necessidades específicas do problema em questão.
+            </p>
+            <p><strong>Limite de valor minimo e máximo: </strong>
+                Definir limites para os valores de uma variável. Por exemplo, ao analisar dados de temperatura, podemos definir um limite mínimo e máximo para considerar apenas as leituras dentro de um determinado intervalo, como entre 0°C e 40°C.
+            </p>
+            <p><strong>Limite de percentil: </strong>
+                Usar percentis para definir limites com base na distribuição dos dados. Por exemplo, ao avaliar a renda de uma população, podemos definir um limite superior de 90º percentil para identificar os 10% mais altos da distribuição de renda.
+            </p> 
+            <p><strong>Limite de Desvio Padrão: </strong>
+                Definir limites com base no desvio padrão dos dados. Por exemplo, ao analisar o desempenho de um modelo preditivo, podemos definir limites para identificar pontos de dados que estão além de um certo número de desvios padrão da média.
+            </p>
+        </div>
+        <div class="conteudos">
+            <h3>Integrais</h3>
+            <p>
+                Integrais em ciência de dados referem-se a conceitos matemáticos fundamentais usados em análises estatísticas e computacionais para calcular áreas, volumes, distâncias e outras grandezas sob curvas ou superfícies. 
+            </p>
+            <p><strong>Definição: </strong>
+                Uma integral é uma medida de acumulação contínua. Em termos simples, ela calcula a soma de infinitos incrementos infinitesimais de uma função ao longo de um intervalo específico.
+            </p>
+            <p><strong>Primitivas: </strong>
+                As primitivas, também conhecidas como antiderivadas, são o oposto das derivadas. Se a derivada de uma função é conhecida, a primitiva é a função original a partir da qual a derivada foi calculada.
+            </p>
+            <p><strong>Distancia: </strong>
+                Em ciência de dados, integrais são usadas para calcular distâncias entre pontos em um espaço multidimensional. Por exemplo, a integral de uma função de densidade de probabilidade pode ser usada para calcular a distância entre duas distribuições de probabilidade.
+            </p>
+            <p><strong>Area: </strong>
+                Uma das aplicações mais comuns das integrais é o cálculo de áreas sob curvas. Isso é útil, por exemplo, para determinar a probabilidade de eventos em distribuições de probabilidade contínuas.
+            </p>
+            <p><strong>Volume: </strong>
+                Integrais também são usadas para calcular volumes de sólidos tridimensionais. Por exemplo, ao analisar conjuntos de dados volumétricos em imagens médicas ou modelos 3D, integrais são frequentemente usadas para calcular volumes de regiões de interesse.
+            </p>
+            <p><strong>Integral Definida: </strong>
+                Uma integral definida é uma integral que possui limites de integração específicos, indicando os pontos inicial e final do intervalo sobre o qual a integral é calculada. A integral definida resulta em um valor numérico que representa a área ou o volume acumulado sob a curva ou superfície no intervalo especificado.
+            </p>
+        </div>
+        <div class="conteudos">
+            <h3>Raizes Racionais</h3>
+            <p>
+                As raízes racionais são os possíveis valores racionais (ou seja, números que podem ser expressos como uma fração de dois inteiros) de uma equação polinomial. Elas são importantes porque fornecem pistas sobre possíveis soluções para a equação.
+            </p>
+        </div>
+    </main>
+    <script src="Scriptwin/scriptwin.js"></script>
+</body>
+</html>

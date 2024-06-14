@@ -3,12 +3,16 @@
     padding: 0px;
     box-sizing: border-box;
 }
+body{
+    background-color: #f6f8f0;
+}
 header#cabeçalho{
     width: 100%;
     height: 100px;
-    background-color: #dcd6d6;
+    background-color: #383838;
     line-height: 100px;
     text-align: center;
+    color: #faac40;
 }
 main{
     margin: 50px;

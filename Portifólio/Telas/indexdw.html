@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenvolvimento Web</title>
+    <link rel="stylesheet" href="Stylewin/stylewin.css">
+</head>
+<body>
+    <header id="menu">
+        <button type="button" id="navopen" onclick="navclick()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+    <nav id="navbar" class="hide">
+        <input class="botaonav" type="button" onclick="autenter()" value="Automação Industrial">
+        <input class="botaonav" type="button" onclick="dwenter()" value="Desenvolvimento Web">
+        <input class="botaonav" type="button" onclick="bdenter()" value="Banco de Dados">
+        <input class="botaonav" type="button" onclick="lpenter()" value="Lógica de programação">
+        <input class="botaonav" type="button" onclick="cdenter()" value="Ciência de Dados">
+    </nav>
+    <main id="conteudo">
+        <div class="conteudos">
+            <h3>JavaScript</h3>
+            <p><strong>Introdução: </strong>
+                JavaScript é uma linguagem de programação 
+                amplamente usada para criar e controlar conteúdo dinâmico em páginas web.
+            </p>
+            <p><strong>Estrutura Básica do JavaScript:</strong> 
+            </p>
+            <img src="/Image/funcao.png" alt="funcao basica">
+        </div>
+        <div class="conteudos">
+            <h3>Tipos primitivos: </h3>
+            <p><strong>Number: </strong>
+                Representa valores numéricos, incluindo inteiros e decimais.
+            </p>
+            <p><strong>Infinity: </strong>
+                Representa um valor numérico infinito. Resulta de operações como divisão por zero.
+            </p>
+            <img src="/Image/infinity.png" alt="imagem infinity">
+            <p><strong>NaN (Not-a-Number): </strong>
+                Representa um valor que não é um número, resultado de operações inválidas.
+            </p>
+            <img src="/Image/nan.png" alt="exemplo nan">
+            <p><strong>int (Inteiros): </strong>
+                Números sem parte decimal.
+            </p>
+            <img src="/Image/int.png" alt="exemplo int">
+            <p><strong>float (Decimais): </strong>
+                Números com parte decimal.
+            </p>
+            <img src="/Image/double.png" alt="exemplo double">
+            <p><strong>String: </strong>
+                Representa uma sequência de caracteres, usada para armazenar texto.
+            </p>
+            <img src="/Image/String.png" alt="exemplo String">
+            <p><strong>Boolean: </strong>
+                Representa um valor lógico, que pode ser true ou false.
+            </p>
+            <img src="/Image/boolean.png" alt="exemplo boolean">
+            <p><strong>Function: </strong>
+                Representa um bloco de código que pode ser executado ou chamado.
+            </p>
+            <img src="/Image/functioncompra.png" alt="exemplo função">
+            <p><strong>Object: </strong>
+                Representa uma coleção de propriedades, 
+                onde cada propriedade é uma associação entre um nome (ou chave) e um valor. Objetos podem incluir outros objetos e tipos primitivos.
+            </p>
+        </div>
+        <div class="conteudos">
+            <h3>Tipos relacionados a Object: </h3>
+            <p><strong>null: </strong>
+                Representa a ausência intencional de qualquer valor objeto.
+            </p>
+            <p><strong>Regras para nomear variaveis: </strong></p>
+            <p><strong>O QUE É PERMITIDO: </strong></p>
+            <li>Começar com letra ou _ ou $</li>
+            <li>Conter acentos</li>
+            <p><strong>NÃO É PERMITIDO: </strong></p>
+            <li>Começar com números</li>
+            <li>Conter espaços</li>
+            <li>Usar palavras reservadas</li>
+        </div>
+        <div class="conteudos">
+            <h3>Declaração de variavel em JS</h3>
+            <p>Declarar variáveis em JavaScript é para armazenar e manipular dados no seu código. 
+                Tem algumas maneirar de fazer isso: usando var, let e const. Cada uma tem suas próprias características e casos de uso.
+            </p>
+            <p><strong>Var: </strong></p>
+            <p><strong>Onde Usar: </strong> Dentro de funções.</p>
+            <p><strong>Como funciona: </strong> 
+                Variáveis declaradas com var podem ser usadas em qualquer lugar da função onde foram declaradas, independentemente de onde a declaração aparece.</p>
+            <p>Exemplo: </p>
+            <img src="/Image/variavellocal.png" alt="exemplo de Variavel Local">
+            <p><strong>Let: </strong></p>
+            <p><strong>Onde Usar: </strong> Dentro de blocos de códigos.(como loops ou condicionais)</p>
+            <p><strong>Como funciona: </strong> 
+                Variáveis declaradas com let só podem ser usadas dentro do bloco onde foram definidas.</p>
+            <p><strong>Const: </strong></p>
+            <p><strong>Onde Usar: </strong> Quando o valor não deve mudar após a declaração.</p>
+            <p><strong>Como funciona: </strong> 
+                Variáveis declaradas com const são constantes e não podem ser reatribuídas. No entanto, se a const for um objeto ou array, você pode modificar suas propriedades ou elementos.</p>
+        </div>
+        <div class="conteudos">
+            <h3>Tratamentos de dados em JS</h3>
+            <p>Quando trabalhamos com JavaScript, muitas vezes precisamos lidar com dados para construir nossas aplicações. Isso envolve criar, modificar e manipular esses dados de várias formas. Aqui estão algumas das coisas mais comuns que você pode fazer com dados em JavaScript.
+
+            </p>
+            <img src="/Image/constantes.png" alt="exemplo de Variavel Global">
+        </div>
+        <div class="conteudos">
+            <h3>Declarar e inicializar variaveis</h3>
+            <p>Primeiro, para armazenar dados em variáveis. Pode-se usar var, let, ou const para isso.
+            </p>
+            <p><strong>Tipos de dados: </strong> JavaScript trabalha com vários tipos de dados, como números, strings (textos), booleanos (verdadeiro/falso), objetos e arrays.
+            </p>
+            <p><strong>Manipulando Strings </strong>
+                É possivel juntar strings, separá-las ou transformá-las
+            </p>
+            <p>Tratar dados em JavaScript é bom para quase qualquer aplicação. 
+            </p>
+            <p>Se incica declarando variáveis, trabalha com diferentes tipos de dados e usa uma variedade de métodos e funções para manipular esses dados conforme necessário. 
+            </p>
+        </div>
+        <div class="conteudos">
+            <h3>Document Object Model(DOM): </h3>
+            <p>O Document Object Model (DOM) é uma interface de programação que permite aos desenvolvedores acessar e manipular o conteúdo, a estrutura e o estilo de documentos HTML e XML de forma dinâmica. 
+                Basicamente, o DOM transforma o documento em uma árvore de objetos, onde cada elemento do documento é um objeto que pode ser manipulado com JavaScript.
+            </p>
+            <p><strong>Estrutura do DOM</strong>
+                Pense no DOM como uma árvore genealógica do seu documento. No topo da árvore, você tem o objeto document, que representa o documento inteiro. A partir desse ponto, cada elemento HTML se torna um "nó" na árvore. 
+            </p>
+            <p><strong>Acessando Elementos do DOM</strong></p>
+            <p><strong>getElementById: </strong> Seleciona um elemento pelo seu ID.
+            </p>
+            <p><strong>getElementsByClassName(): </strong> Seleciona todos os elementos com uma determinada classe.
+            </p>
+            <p><strong>getElementsByTagName(): </strong> Seleciona todos os elementos de um determinado tipo de tag.
+            </p>
+            <p><strong>querySelector(): </strong> Seleciona o primeiro elemento que corresponde a um seletor CSS.
+            </p>
+            <p><strong>querySelectorAll(): </strong> Seleciona todos os elementos que correspondem a um seletor CSS.
+            </p>
+            <p>O DOM é uma poderosa interface de programação que permite acessar e manipular dinamicamente a estrutura e o conteúdo dos documentos HTML e XML. Ele transforma o documento em uma árvore de objetos, permitindo que você use JavaScript para alterar a aparência, o conteúdo e o comportamento dos elementos na página.
+            </p>
+        </div>
+        <div class="conteudos">
+            <h3>Estruturas de decisão em JS</h3>
+            <p>Estruturas de decisão em JavaScript são usadas para controlar o fluxo do seu programa com base em condições específicas. 
+                As estruturas de decisão mais comuns são if, else if, else, switch e o operador ternário.
+            </p>
+            <p>Essas estruturas são bem usadas em diferentes blocos de código em base de condições booleanas. 
+                Se for verdadeiro, isso executa, caso ao contrário, executa outra coisa.
+            </p>
+            <p><strong>switch</strong></p>
+            <p>O switch é usado para realizar múltiplas comparações contra a mesma expressão. 
+                Ele é útil quando você precisa comparar uma variável com vários valores diferentes e executar diferentes blocos de código com base no valor correspondente.
+            </p>
+        </div>
+        <div class="conteudos">
+            <h3>Estruturas de decisão em JS</h3>
+            <p>Estruturas de decisão em JavaScript são usadas para controlar o fluxo do seu programa com base em condições específicas. 
+                As estruturas de decisão mais comuns são if, else if, else, switch e o operador ternário.
+            </p>
+            <p>Essas estruturas são bem usadas em diferentes blocos de código em base de condições booleanas. 
+                Se for verdadeiro, isso executa, caso ao contrário, executa outra coisa.
+            </p>
+            <p><strong>switch</strong></p>
+            <p>O switch é usado para realizar múltiplas comparações contra a mesma expressão. 
+                Ele é útil quando você precisa comparar uma variável com vários valores diferentes e executar diferentes blocos de código com base no valor correspondente.
+            </p>
+        </div>
+        <div class="conteudos">
+            <h3>Estruturas de repetição em JS</h3>
+            <p>Em JavaScript, existem várias estruturas de repetição que permitem executar um bloco de código várias vezes. As estruturas de repetição mais comuns são for, while, do while e for...of (que é semelhante ao forEach em alguns aspectos).
+            </p>
+            <p><strong>for: </strong>
+                O loop for é usado quando você sabe exatamente quantas vezes deseja iterar.
+            </p>
+            <p><strong>while: </strong>
+                O loop while é usado quando você quer que o código repita enquanto uma condição for verdadeira.</p>
+            <p><strong>do while: </strong>
+                O loop do while é semelhante ao while, mas garante que o bloco de código seja executado pelo menos uma vez, mesmo se a condição for falsa.
+            </p>
+            <p><strong>foreach: </strong></p>
+            <p>É um método disponível para arrays em JavaScript que permite executar uma função para cada elemento do array. É uma forma mais concisa de percorrer os elementos de um array em comparação com o loop for tradicional.</p>
+            <p><strong>elemento: </strong>
+                O valor atual do elemento sendo processado no array.
+            </p>
+            <p><strong>indice(opcional): </strong>
+                O índice do elemento atual sendo processado no array.
+            </p>
+            <p><strong>array(opcional): </strong>
+                O array ao qual o elemento pertence.
+            </p>
+        </div>
+        <div class="conteudos">
+            <h3>Vetores em JS</h3>
+            <p>Em JavaScript, vetores são uma estrutura de dados usada para armazenar coleções de elementos. 
+                Na verdade, em JavaScript, os vetores são implementados como objetos do tipo Array, que fornecem métodos e propriedades para manipular esses conjuntos de elementos de forma eficiente.
+            </p>
+            <p><strong>Propriedades e Metodos do Vetor: </strong>
+                Os vetores em JavaScript têm várias propriedades e métodos úteis para manipulação de dados, como length, push, pop, shift, unshift, splice, slice, entre outros.  
+            </p>
+        </div>
+        <div class="conteudos">
+            <h3>Funções em JS</h3>
+            <p>Elas permitem encapsular uma determinada lógica e reutilizá-la em diferentes partes do seu código.
+            </p>
+            <p><strong>Propriedades e Metodos do Vetor: </strong>
+                Os vetores em JavaScript têm várias propriedades e métodos úteis para manipulação de dados, como length, push, pop, shift, unshift, splice, slice, entre outros.  
+            </p>
+            <p><strong>Chamada de função</strong>
+                Depois de declarada, é possivel chamar uma função em qualquer lugar do código:
+            </p>
+            <p><strong>Parametros e argumentos</strong>
+                As funções podem aceitar parâmetros, que são valores que a função espera receber quando é chamada. Os parâmetros são especificados entre os parênteses na declaração da função. Os argumentos são os valores reais que são passados para a função quando ela é chamada.
+            </p>
+            <p><strong>Retorno de função</strong>
+                As funções podem retornar um valor usando a palavra-chave return. O valor retornado pode ser usado em outras partes do código.
+            </p>
+        </div>
+    </main>
+
+    <script src="Scriptwin/scriptwin.js"></script>
+</body>
+</html>

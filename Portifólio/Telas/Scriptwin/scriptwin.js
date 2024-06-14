@@ -13,3 +13,19 @@ button.addEventListener('click', ()=>{
         navbar.classList.remove('show')
     }   
 })
+//As funções abrem uma pagina quando clicada
+function autenter(){
+    window.location.href = "indexaut.html"
+}
+function dwenter(){
+    window.location.href = "indexdw.html"
+}
+function bdenter(){
+    window.location.href = "indexbd.html"
+}
+function lpenter(){
+    window.location.href = "indexlp.html"
+}
+function cdenter(){
+    window.location.href = "indexcd.html"
+}
